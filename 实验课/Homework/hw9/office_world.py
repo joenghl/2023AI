@@ -205,11 +205,11 @@ def play(task):
 
     game = Game(task)  # setting the environment
     s1 = game.reset()
-    events = ''
+    events = 'None'
     while True:
         # Showing game
         game.render()
-        print("Events:", game.world.prop_meaning[events])
+        print("Events:", events)
         # Getting action
         print("Action? ", end="")
         a = input()
